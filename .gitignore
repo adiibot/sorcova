@@ -1,0 +1,7 @@
+# Private source material — never publish
+sorcova-website-brief.md
+
+# Local and generated files
+.DS_Store
+*.log
+node_modules/
