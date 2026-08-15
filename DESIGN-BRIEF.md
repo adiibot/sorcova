@@ -15,7 +15,7 @@ The site should feel like one governed product system. It should not feel like a
 
 ## Narrative sequence
 
-Promise → measurable platform → intelligence moat → scientific method → longitudinal vision → clinical product → governance → evidence coverage → stakeholder value → conversation.
+Promise → human problem → measurable platform → intelligence moat → scientific method → longitudinal vision → clinical product → governance → evidence coverage → stakeholder value → conversation.
 
 ## Visual principles
 
