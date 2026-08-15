@@ -51,7 +51,7 @@ if ('IntersectionObserver' in window) {
       }
     });
   }, { rootMargin: '-25% 0px -65% 0px' });
-  ['platform', 'science', 'clinicians', 'trust'].forEach((id) => {
+  ['platform', 'science', 'vision', 'clinicians', 'trust'].forEach((id) => {
     const section = document.getElementById(id);
     if (section) navObserver.observe(section);
   });
