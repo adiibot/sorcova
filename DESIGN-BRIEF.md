@@ -50,6 +50,16 @@ Promise → human problem → measurable platform → intelligence moat → scie
 - No meaningful interface text below 11px.
 - Section hierarchy and reading order remain intact without animation or CSS.
 
+## Scientific motion choreography
+
+- Motion must explain biology: oscillation represents rhythm, a scan represents observation through time, and progressive connection represents longitudinal context.
+- The hero establishes that signals move continuously rather than existing as isolated values.
+- The illustrative profile resolves in stages: reference context → observed curve → interpreted pattern labels.
+- The rhythm explorer keeps time visible while the reader compares two simplified daily patterns.
+- The systems explorer can guide the reader automatically, but remains pausable and directly controllable.
+- The baseline sequence advances with scroll position so repeated observations visibly accumulate into clinician-reviewed context.
+- No essential claim, label or status depends on motion. Reduced-motion mode presents the complete final state immediately.
+
 ## Content guardrails
 
 - Keep the proprietary formula and weighting sealed.

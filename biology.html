@@ -49,6 +49,13 @@
     </nav>
   </header>
 
+  <nav class="biology-story-rail" aria-label="Know your biology chapters" data-story-rail>
+    <a href="#first-signal" class="active" data-story-link="first-signal"><span>01</span><i></i><b>Signal</b></a>
+    <a href="#rhythm" data-story-link="rhythm"><span>02</span><i></i><b>Rhythm</b></a>
+    <a href="#systems" data-story-link="systems"><span>03</span><i></i><b>Systems</b></a>
+    <a href="#baseline" data-story-link="baseline"><span>04</span><i></i><b>Baseline</b></a>
+  </nav>
+
   <main id="main">
     <section class="biology-hero" id="top">
       <div class="biology-hero-copy reveal">
@@ -69,7 +76,14 @@
           <path class="rhythm-line rhythm-three" d="M35 355 C125 315 165 165 255 205 S370 390 450 300 S575 180 685 230"/>
           <path class="rhythm-line rhythm-focus" d="M35 310 C115 315 165 285 245 270 S375 255 455 245 S575 235 685 230"/>
           <circle class="rhythm-marker marker-one" cx="245" cy="270" r="6"/><circle class="rhythm-marker marker-two" cx="455" cy="245" r="6"/><circle class="rhythm-marker marker-three" cx="685" cy="230" r="6"/>
+          <g class="travelling-signals">
+            <circle class="travelling-signal signal-mint" r="5"><animateMotion dur="7s" repeatCount="indefinite" path="M35 300 C115 120 165 110 235 260 S360 435 438 250 S565 110 685 235"/></circle>
+            <circle class="travelling-signal signal-coral" r="5"><animateMotion dur="9s" begin="-3s" repeatCount="indefinite" path="M35 240 C115 390 175 400 250 250 S370 90 445 255 S570 415 685 265"/></circle>
+            <circle class="travelling-signal signal-amber" r="4"><animateMotion dur="8s" begin="-5s" repeatCount="indefinite" path="M35 355 C125 315 165 165 255 205 S370 390 450 300 S575 180 685 230"/></circle>
+          </g>
         </svg>
+        <div class="hero-scan" aria-hidden="true"></div>
+        <div class="hero-time-readout" aria-hidden="true"><span>Biological time</span><strong data-biological-time>06:30</strong><small data-biological-phase>Awakening window</small></div>
         <p><span>One moment</span><i></i><span>Pattern</span><i></i><span>Personal baseline</span></p>
       </div>
     </section>
@@ -93,6 +107,7 @@
           <path class="disturbed-fill" d="M70 156 C135 130 168 138 210 166 S305 190 350 207 S445 214 490 199 S570 175 630 190 L630 286 L70 286Z"/>
           <path class="disturbed-line" d="M70 156 C135 130 168 138 210 166 S305 190 350 207 S445 214 490 199 S570 175 630 190"/>
           <g class="disturbed-points"><circle cx="70" cy="156" r="6"/><circle cx="210" cy="166" r="6"/><circle cx="350" cy="207" r="6"/><circle cx="490" cy="199" r="6"/><circle cx="630" cy="190" r="6"/></g>
+          <g class="profile-scan" aria-hidden="true"><line x1="70" y1="36" x2="70" y2="286"/></g>
           <g class="profile-axis-labels"><text x="58" y="319">WAKING</text><text x="196" y="319">+30M</text><text x="339" y="319">NOON</text><text x="476" y="319">EVENING</text><text x="612" y="319">NIGHT</text></g>
         </svg>
         <div class="profile-figure-legend"><span><i class="line-observed"></i> Illustrative profile</span><span><i class="area-reference"></i> Expected reference band</span></div>
@@ -101,7 +116,7 @@
       </figure>
     </section>
 
-    <section class="rhythm-lab" aria-labelledby="rhythm-title">
+    <section class="rhythm-lab" id="rhythm" aria-labelledby="rhythm-title">
       <div class="rhythm-lab-heading reveal">
         <p class="eyebrow"><span></span> Biology is time</p>
         <h2 id="rhythm-title">The same marker can mean something different <em>at a different hour.</em></h2>
@@ -114,20 +129,24 @@
           <button type="button" data-rhythm-button="disturbed" class="active" aria-pressed="true"><span>02</span> Disturbed rhythm</button>
         </div>
         <div class="rhythm-stage">
-          <svg viewBox="0 0 760 370" role="img" aria-label="Interactive comparison of intact and disturbed biological rhythms">
-            <g class="lab-grid"><path d="M60 65H710M60 140H710M60 215H710M60 290H710"/><path d="M80 40V310M230 40V310M380 40V310M530 40V310M690 40V310"/></g>
-            <path class="lab-reference" d="M80 120 C145 45 195 52 230 112 S320 185 380 205 S485 240 530 250 S630 270 690 278"/>
-            <path class="lab-curve balanced" data-rhythm-curve="balanced" d="M80 126 C145 53 192 62 230 117 S320 183 380 204 S485 238 530 248 S630 268 690 276"/>
-            <path class="lab-curve disturbed active" data-rhythm-curve="disturbed" d="M80 190 C142 158 185 166 230 191 S325 218 380 235 S478 226 530 205 S625 189 690 214"/>
-            <g class="lab-axis-labels"><text x="67" y="342">WAKE</text><text x="213" y="342">+30M</text><text x="365" y="342">NOON</text><text x="514" y="342">PM</text><text x="671" y="342">NIGHT</text></g>
-          </svg>
+          <div class="rhythm-chart-viewport">
+            <svg viewBox="0 0 760 370" role="img" aria-label="Interactive comparison of intact and disturbed biological rhythms">
+              <g class="lab-grid"><path d="M60 65H710M60 140H710M60 215H710M60 290H710"/><path d="M80 40V310M230 40V310M380 40V310M530 40V310M690 40V310"/></g>
+              <path class="lab-reference" d="M80 120 C145 45 195 52 230 112 S320 185 380 205 S485 240 530 250 S630 270 690 278"/>
+              <path class="lab-curve balanced" data-rhythm-curve="balanced" d="M80 126 C145 53 192 62 230 117 S320 183 380 204 S485 238 530 248 S630 268 690 276"/>
+              <path class="lab-curve disturbed active" data-rhythm-curve="disturbed" d="M80 190 C142 158 185 166 230 191 S325 218 380 235 S478 226 530 205 S625 189 690 214"/>
+              <g class="lab-axis-labels"><text x="67" y="342">WAKE</text><text x="213" y="342">+30M</text><text x="365" y="342">NOON</text><text x="514" y="342">PM</text><text x="671" y="342">NIGHT</text></g>
+            </svg>
+            <div class="lab-time-scan" aria-hidden="true"><i></i><span></span></div>
+            <div class="rhythm-clock" aria-hidden="true"><small data-rhythm-phase>Awakening response</small><strong data-rhythm-time>06:30</strong></div>
+          </div>
           <div class="rhythm-annotation" data-rhythm-copy="balanced" hidden><span>Intact pattern</span><strong>Sharp rise. Predictable decline.</strong><p>A clear awakening response is followed by a gradual reduction toward night.</p></div>
           <div class="rhythm-annotation active" data-rhythm-copy="disturbed"><span>Disturbed pattern</span><strong>Blunted rise. Rhythm stays elevated.</strong><p>The daily signal is flatter, with less morning separation and a later lift.</p></div>
         </div>
       </div>
     </section>
 
-    <section class="systems-story" aria-labelledby="systems-title">
+    <section class="systems-story" id="systems" aria-labelledby="systems-title">
       <div class="systems-heading reveal">
         <p class="eyebrow eyebrow-light"><span></span> Systems keep time together</p>
         <h2 id="systems-title">Stress is one doorway into a <em>wider biological conversation.</em></h2>
@@ -145,6 +164,7 @@
         </div>
         <div class="system-focus" aria-live="polite">
           <div class="system-focus-orbit" aria-hidden="true"><i></i><i></i><i></i><span data-system-code>S</span></div>
+          <button class="system-tour-control" type="button" aria-pressed="false" data-system-autoplay><i></i><span>Pause guided tour</span></button>
           <p data-system-status>Current foundation</p>
           <h3 data-system-title>Stress rhythm</h3>
           <div data-system-description>Diurnal cortisol, adrenal reserve and neurotransmitter-related signals form Sorcova’s first measurable biological gateway.</div>
@@ -153,13 +173,13 @@
       <p class="systems-disclaimer reveal">Expansion-horizon panels are in development or planned and are not part of Sorcova’s current Class I intended purpose.</p>
     </section>
 
-    <section class="baseline-story" aria-labelledby="baseline-title">
+    <section class="baseline-story" id="baseline" aria-labelledby="baseline-title">
       <div class="baseline-heading reveal">
         <p class="eyebrow"><span></span> From moment to meaning</p>
         <h2 id="baseline-title">A living baseline,<br><em>not a permanent label.</em></h2>
         <p>One profile can show what is happening now. Repeated, governed observations can begin to show what is changing, what is stable and what deserves review.</p>
       </div>
-      <div class="baseline-timeline reveal" aria-label="Illustrative journey from first measurement to longitudinal baseline">
+      <div class="baseline-timeline reveal" data-baseline-timeline aria-label="Illustrative journey from first measurement to longitudinal baseline">
         <article><span>01</span><i></i><small>First observation</small><strong>A moment becomes visible.</strong><p>Signals are structured, confidence-tagged and interpreted in context.</p></article>
         <article><span>02</span><i></i><small>Repeated window</small><strong>A pattern begins to form.</strong><p>New observations can be compared with the individual’s earlier state.</p></article>
         <article><span>03</span><i></i><small>Personal baseline</small><strong>Change becomes meaningful.</strong><p>Direction and persistence matter more than any isolated number.</p></article>
