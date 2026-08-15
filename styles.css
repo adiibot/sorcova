@@ -496,6 +496,8 @@ h1 em, h2 em { font-weight: 500; letter-spacing: -.035em; }
 .story-principles strong { display: block; max-width: 320px; margin: 52px 0 14px; font-size: clamp(22px, 1.8vw, 27px); line-height: 1.12; letter-spacing: -.035em; }
 .story-principles p { max-width: 350px; margin: 0; color: var(--ink-muted); font-size: 14px; line-height: 1.68; text-wrap: pretty; }
 .story-audience { max-width: 920px; margin: 34px 0 0 auto; color: var(--ink-muted); font-size: 17px; line-height: 1.7; text-wrap: pretty; }
+.story-audience a { display: inline-flex; align-items: center; gap: 7px; margin-left: 8px; color: var(--ink); border-bottom: 1px solid var(--ink); font-size: 14px; font-weight: 750; white-space: nowrap; }
+.story-audience a span { color: var(--orange-dark); }
 
 .pathway { gap: 1px; overflow: hidden; border: 1px solid var(--line); border-radius: 30px; background: var(--line); box-shadow: 0 24px 70px rgba(8,40,42,.07); }
 .pathway-card {

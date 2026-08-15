@@ -17,6 +17,8 @@ The site should feel like one governed product system. It should not feel like a
 
 Promise → human problem → measurable platform → intelligence moat → scientific method → longitudinal vision → clinical product → governance → evidence coverage → stakeholder value → conversation.
 
+“Know your biology” is a dedicated educational journey, not a duplicate Science page. It translates the human experience into an accessible sequence: felt state → biological rhythm → connected systems → repeated observations → personal baseline → clinician context. The Science section remains the home for evidence, method and technical architecture.
+
 ## Visual principles
 
 - Quiet confidence: large ideas, controlled typography and generous negative space.

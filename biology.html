@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Know your biology with Sorcova: explore biological rhythms, connected systems and the path from a single measurement toward a personal baseline.">
+  <meta name="theme-color" content="#08282a">
+  <meta name="color-scheme" content="light">
+  <title>Know your biology — Sorcova</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="biology.css">
+  <script defer src="script.js"></script>
+  <script defer src="biology.js"></script>
+</head>
+<body class="biology-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="scroll-progress" data-scroll-progress aria-hidden="true"></div>
+    <a class="brand" href="index.html#top" aria-label="Sorcova home">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M8 24.5c4.7 0 7.4-2.9 9.8-7.7 2.4-4.8 5.5-8.1 12.2-8.1"/>
+        <path d="M8 31.2c8.7 0 11.9-4.7 14.6-9.4 2.1-3.7 4-6 9.4-6"/>
+        <circle cx="8" cy="24.5" r="2.4"/><circle cx="8" cy="31.2" r="2.4"/>
+      </svg>
+      <span>Sorcova</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="index.html#platform">Platform</a>
+      <a href="biology.html" class="active" aria-current="page">Know your biology</a>
+      <a href="index.html#system">Intelligence</a>
+      <a href="index.html#science">Science</a>
+      <a href="index.html#vision">Vision</a>
+      <a href="index.html#trust">Trust</a>
+    </nav>
+
+    <a class="header-cta" href="index.html#contact">Partner with us <span aria-hidden="true">↗</span></a>
+    <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" data-menu-button><span></span><span></span></button>
+    <nav class="mobile-nav" aria-label="Mobile navigation" data-mobile-nav>
+      <a href="index.html#platform">Platform</a>
+      <a href="biology.html" aria-current="page">Know your biology</a>
+      <a href="index.html#system">Intelligence</a>
+      <a href="index.html#science">Science</a>
+      <a href="index.html#vision">Vision</a>
+      <a href="index.html#trust">Trust</a>
+      <a href="index.html#contact">Partner with us</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="biology-hero" id="top">
+      <div class="biology-hero-copy reveal">
+        <p class="eyebrow"><span></span> Know your biology</p>
+        <h1>Your body does not speak in <em>snapshots.</em></h1>
+        <p>A single value catches a moment. Your biology speaks in rhythms, relationships and change over time. Follow the signal from what you feel to what the body may already be showing.</p>
+        <a class="button button-primary" href="#first-signal">Follow the signal <span>↓</span></a>
+      </div>
+
+      <div class="biology-hero-graphic reveal" role="img" aria-label="Illustration of several biological rhythms moving independently and then aligning over time">
+        <div class="graphic-label graphic-label-one"><i></i> Hormonal rhythm</div>
+        <div class="graphic-label graphic-label-two"><i></i> Inflammatory load</div>
+        <div class="graphic-label graphic-label-three"><i></i> Recovery signal</div>
+        <svg viewBox="0 0 720 520" aria-hidden="true">
+          <g class="rhythm-grid"><path d="M40 80H680M40 170H680M40 260H680M40 350H680M40 440H680"/><path d="M120 40V480M260 40V480M400 40V480M540 40V480"/></g>
+          <path class="rhythm-line rhythm-one" d="M35 300 C115 120 165 110 235 260 S360 435 438 250 S565 110 685 235"/>
+          <path class="rhythm-line rhythm-two" d="M35 240 C115 390 175 400 250 250 S370 90 445 255 S570 415 685 265"/>
+          <path class="rhythm-line rhythm-three" d="M35 355 C125 315 165 165 255 205 S370 390 450 300 S575 180 685 230"/>
+          <path class="rhythm-line rhythm-focus" d="M35 310 C115 315 165 285 245 270 S375 255 455 245 S575 235 685 230"/>
+          <circle class="rhythm-marker marker-one" cx="245" cy="270" r="6"/><circle class="rhythm-marker marker-two" cx="455" cy="245" r="6"/><circle class="rhythm-marker marker-three" cx="685" cy="230" r="6"/>
+        </svg>
+        <p><span>One moment</span><i></i><span>Pattern</span><i></i><span>Personal baseline</span></p>
+      </div>
+    </section>
+
+    <section class="biology-opening" id="first-signal">
+      <div class="biology-opening-copy reveal">
+        <p class="eyebrow"><span></span> Before the feeling has a name</p>
+        <blockquote>“I’m not stressed.<br>Just a bit tired.”</blockquote>
+        <h2>Their biology tells <em>another story.</em></h2>
+        <p>What feels like ordinary tiredness can sit beside a disrupted daily rhythm. The point is not to diagnose a feeling from one curve. It is to notice that the biological context may deserve a closer, clinician-led look.</p>
+      </div>
+
+      <figure class="disturbed-profile reveal">
+        <div class="profile-figure-head"><span>Illustrative diurnal profile</span><b><i></i> Disturbed rhythm</b></div>
+        <svg viewBox="0 0 680 350" role="img" aria-labelledby="disturbed-title disturbed-desc">
+          <title id="disturbed-title">Illustrative disturbed cortisol rhythm</title>
+          <desc id="disturbed-desc">A reference band rises after waking and declines through the day. The illustrative profile has a blunted morning rise and a late-day lift.</desc>
+          <defs><linearGradient id="disturbedFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ee6b4f" stop-opacity=".22"/><stop offset="1" stop-color="#ee6b4f" stop-opacity="0"/></linearGradient></defs>
+          <g class="profile-grid-lines"><path d="M52 58H640M52 125H640M52 192H640M52 259H640"/><path d="M70 36V286M210 36V286M350 36V286M490 36V286M630 36V286"/></g>
+          <path class="reference-band" d="M70 92 C130 42 176 56 210 106 S302 164 350 180 S450 218 490 225 S575 242 630 250 L630 278 C570 268 520 264 490 258 S398 232 350 220 S250 183 210 153 S125 105 70 145Z"/>
+          <path class="disturbed-fill" d="M70 156 C135 130 168 138 210 166 S305 190 350 207 S445 214 490 199 S570 175 630 190 L630 286 L70 286Z"/>
+          <path class="disturbed-line" d="M70 156 C135 130 168 138 210 166 S305 190 350 207 S445 214 490 199 S570 175 630 190"/>
+          <g class="disturbed-points"><circle cx="70" cy="156" r="6"/><circle cx="210" cy="166" r="6"/><circle cx="350" cy="207" r="6"/><circle cx="490" cy="199" r="6"/><circle cx="630" cy="190" r="6"/></g>
+          <g class="profile-axis-labels"><text x="58" y="319">WAKING</text><text x="196" y="319">+30M</text><text x="339" y="319">NOON</text><text x="476" y="319">EVENING</text><text x="612" y="319">NIGHT</text></g>
+        </svg>
+        <div class="profile-figure-legend"><span><i class="line-observed"></i> Illustrative profile</span><span><i class="area-reference"></i> Expected reference band</span></div>
+        <div class="profile-findings"><span>Blunted awakening response</span><span>Flattened decline</span><span>Late-day lift</span></div>
+        <figcaption>Illustrative only—not an individual result or diagnosis.</figcaption>
+      </figure>
+    </section>
+
+    <section class="rhythm-lab" aria-labelledby="rhythm-title">
+      <div class="rhythm-lab-heading reveal">
+        <p class="eyebrow"><span></span> Biology is time</p>
+        <h2 id="rhythm-title">The same marker can mean something different <em>at a different hour.</em></h2>
+        <p>Explore two simplified rhythms. The shape, timing and relationship between measurements can carry information that a single isolated value cannot.</p>
+      </div>
+
+      <div class="rhythm-explorer reveal">
+        <div class="rhythm-controls" role="group" aria-label="Choose an illustrative rhythm">
+          <button type="button" data-rhythm-button="balanced" aria-pressed="false"><span>01</span> Intact rhythm</button>
+          <button type="button" data-rhythm-button="disturbed" class="active" aria-pressed="true"><span>02</span> Disturbed rhythm</button>
+        </div>
+        <div class="rhythm-stage">
+          <svg viewBox="0 0 760 370" role="img" aria-label="Interactive comparison of intact and disturbed biological rhythms">
+            <g class="lab-grid"><path d="M60 65H710M60 140H710M60 215H710M60 290H710"/><path d="M80 40V310M230 40V310M380 40V310M530 40V310M690 40V310"/></g>
+            <path class="lab-reference" d="M80 120 C145 45 195 52 230 112 S320 185 380 205 S485 240 530 250 S630 270 690 278"/>
+            <path class="lab-curve balanced" data-rhythm-curve="balanced" d="M80 126 C145 53 192 62 230 117 S320 183 380 204 S485 238 530 248 S630 268 690 276"/>
+            <path class="lab-curve disturbed active" data-rhythm-curve="disturbed" d="M80 190 C142 158 185 166 230 191 S325 218 380 235 S478 226 530 205 S625 189 690 214"/>
+            <g class="lab-axis-labels"><text x="67" y="342">WAKE</text><text x="213" y="342">+30M</text><text x="365" y="342">NOON</text><text x="514" y="342">PM</text><text x="671" y="342">NIGHT</text></g>
+          </svg>
+          <div class="rhythm-annotation" data-rhythm-copy="balanced" hidden><span>Intact pattern</span><strong>Sharp rise. Predictable decline.</strong><p>A clear awakening response is followed by a gradual reduction toward night.</p></div>
+          <div class="rhythm-annotation active" data-rhythm-copy="disturbed"><span>Disturbed pattern</span><strong>Blunted rise. Rhythm stays elevated.</strong><p>The daily signal is flatter, with less morning separation and a later lift.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="systems-story" aria-labelledby="systems-title">
+      <div class="systems-heading reveal">
+        <p class="eyebrow eyebrow-light"><span></span> Systems keep time together</p>
+        <h2 id="systems-title">Stress is one doorway into a <em>wider biological conversation.</em></h2>
+        <p>Cortisol rarely exists in isolation. Hormonal signalling, inflammatory load, oxidative balance, metabolism and the gut–brain axis can move with it. Sorcova begins with a defined stress signature and is being built to connect a broader longitudinal picture.</p>
+      </div>
+
+      <div class="system-explorer reveal">
+        <div class="system-node-grid" role="group" aria-label="Explore biological systems">
+          <button type="button" class="active" aria-pressed="true" data-system-node data-code="S" data-title="Stress rhythm" data-status="Current foundation" data-description="Diurnal cortisol, adrenal reserve and neurotransmitter-related signals form Sorcova’s first measurable biological gateway."><i></i><span>Stress rhythm</span><small>Current</small></button>
+          <button type="button" aria-pressed="false" data-system-node data-code="H" data-title="Hormonal balance" data-status="Expansion horizon" data-description="Sex-hormone patterns can add context to energy, recovery and biological change across life stages."><i></i><span>Hormones</span><small>Expanding</small></button>
+          <button type="button" aria-pressed="false" data-system-node data-code="I" data-title="Inflammatory load" data-status="Expansion horizon" data-description="Inflammatory markers can help place stress and recovery signals within a wider systemic context."><i></i><span>Inflammation</span><small>Expanding</small></button>
+          <button type="button" aria-pressed="false" data-system-node data-code="O" data-title="Oxidative balance" data-status="Expansion horizon" data-description="Oxidative-stress signals can contribute another layer to understanding cellular load and recovery capacity."><i></i><span>Oxidative stress</span><small>Expanding</small></button>
+          <button type="button" aria-pressed="false" data-system-node data-code="G" data-title="Gut–brain axis" data-status="Expansion horizon" data-description="Microbiome and gut-barrier context can help explain how biological systems communicate beyond a single organ or pathway."><i></i><span>Gut & microbiome</span><small>Expanding</small></button>
+          <button type="button" aria-pressed="false" data-system-node data-code="M" data-title="Metabolic context" data-status="Expansion horizon" data-description="Glucose regulation, insulin sensitivity and metabolic context can help make longitudinal change more interpretable."><i></i><span>Metabolism</span><small>Expanding</small></button>
+        </div>
+        <div class="system-focus" aria-live="polite">
+          <div class="system-focus-orbit" aria-hidden="true"><i></i><i></i><i></i><span data-system-code>S</span></div>
+          <p data-system-status>Current foundation</p>
+          <h3 data-system-title>Stress rhythm</h3>
+          <div data-system-description>Diurnal cortisol, adrenal reserve and neurotransmitter-related signals form Sorcova’s first measurable biological gateway.</div>
+        </div>
+      </div>
+      <p class="systems-disclaimer reveal">Expansion-horizon panels are in development or planned and are not part of Sorcova’s current Class I intended purpose.</p>
+    </section>
+
+    <section class="baseline-story" aria-labelledby="baseline-title">
+      <div class="baseline-heading reveal">
+        <p class="eyebrow"><span></span> From moment to meaning</p>
+        <h2 id="baseline-title">A living baseline,<br><em>not a permanent label.</em></h2>
+        <p>One profile can show what is happening now. Repeated, governed observations can begin to show what is changing, what is stable and what deserves review.</p>
+      </div>
+      <div class="baseline-timeline reveal" aria-label="Illustrative journey from first measurement to longitudinal baseline">
+        <article><span>01</span><i></i><small>First observation</small><strong>A moment becomes visible.</strong><p>Signals are structured, confidence-tagged and interpreted in context.</p></article>
+        <article><span>02</span><i></i><small>Repeated window</small><strong>A pattern begins to form.</strong><p>New observations can be compared with the individual’s earlier state.</p></article>
+        <article><span>03</span><i></i><small>Personal baseline</small><strong>Change becomes meaningful.</strong><p>Direction and persistence matter more than any isolated number.</p></article>
+        <article><span>04</span><i></i><small>Clinician review</small><strong>Context becomes a pathway.</strong><p>The responsible clinician decides what the evidence means and what follows.</p></article>
+      </div>
+    </section>
+
+    <section class="biology-cta">
+      <div class="reveal"><p class="eyebrow"><span></span> Continue the story</p><h2>Know the biology.<br><em>Then see the system behind it.</em></h2></div>
+      <div class="biology-cta-actions reveal"><a href="index.html#platform">Explore the platform <span>↗</span></a><a href="index.html#science">Go deeper into the science <span>↗</span></a><a href="index.html#contact">Talk with Sorcova <span>↗</span></a></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <a class="brand brand-footer" href="index.html#top" aria-label="Sorcova home">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 24.5c4.7 0 7.4-2.9 9.8-7.7 2.4-4.8 5.5-8.1 12.2-8.1"/><path d="M8 31.2c8.7 0 11.9-4.7 14.6-9.4 2.1-3.7 4-6 9.4-6"/><circle cx="8" cy="24.5" r="2.4"/><circle cx="8" cy="31.2" r="2.4"/></svg>
+        <span>Sorcova</span>
+      </a>
+      <p>Stress is the starting point. Longevity is the horizon.</p>
+      <div class="footer-links"><a href="index.html#platform">Platform</a><a href="biology.html">Know your biology</a><a href="index.html#science">Science</a><a href="index.html#trust">Trust</a><a href="index.html#contact">Contact</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-year></span> Sorcova Health SAS</span><span>SIREN 952 442 655 · Neuilly-sur-Seine, France</span><span>Class I today · On track to Class IIa</span></div>
+  </footer>
+</body>
+</html>
