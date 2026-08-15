@@ -46,6 +46,13 @@ button { font: inherit; }
 .desktop-nav a:after { content: ""; position: absolute; inset: auto 0 4px; height: 1px; background: var(--orange); transform: scaleX(0); transform-origin: right; transition: transform .25s; }
 .desktop-nav a:hover:after, .desktop-nav a.active:after { transform: scaleX(1); transform-origin: left; }
 .desktop-nav a.active { color: var(--orange-dark); }
+.header-actions { justify-self: end; display: flex; align-items: center; gap: 10px; }
+.header-biology-link { display: inline-flex; align-items: center; gap: 8px; min-height: 42px; padding: 0 15px; border: 1px solid rgba(8,40,42,.2); border-radius: 99px; color: var(--ink); background: rgba(188,239,208,.52); white-space: nowrap; font-size: 11px; font-weight: 800; transition: transform .2s, background .2s, border-color .2s; }
+.header-biology-link i { width: 6px; height: 6px; border-radius: 50%; background: var(--orange); box-shadow: 0 0 0 4px rgba(238,107,79,.1); }
+.header-biology-link span { color: var(--orange-dark); transition: transform .2s; }
+.header-biology-link:hover { transform: translateY(-2px); background: var(--mint); }
+.header-biology-link:hover span { transform: translate(2px,-2px); }
+.header-biology-link.active { border-color: rgba(238,107,79,.48); background: var(--mint); }
 .header-cta { justify-self: end; display: inline-flex; gap: 10px; align-items: center; min-height: 46px; background: var(--ink); color: white; border-radius: 99px; padding: 0 20px; font-size: 12px; font-weight: 750; box-shadow: 0 8px 24px rgba(17,42,45,.12); transition: transform .2s, background .2s, box-shadow .2s; }
 .header-cta:hover { transform: translateY(-2px); background: var(--orange-dark); box-shadow: 0 11px 30px rgba(201,81,53,.22); }
 .menu-button, .mobile-nav { display: none; }
@@ -301,6 +308,8 @@ h1 em, h2 em { font-family: var(--serif); font-style: italic; letter-spacing: -.
 .site-header:not(.scrolled) .brand-mark circle { fill: var(--mint); }
 .site-header:not(.scrolled) .header-cta { color: var(--ink); background: var(--mint); box-shadow: 0 10px 30px rgba(184,245,210,.12); }
 .site-header:not(.scrolled) .header-cta:hover { background: var(--mint-bright); }
+.site-header:not(.scrolled) .header-biology-link { color: white; border-color: rgba(188,239,208,.34); background: rgba(188,239,208,.08); }
+.site-header:not(.scrolled) .header-biology-link:hover, .site-header:not(.scrolled) .header-biology-link.active { color: var(--ink); border-color: var(--mint); background: var(--mint); }
 .site-header.scrolled { background: rgba(244,246,242,.9); }
 .hero { min-height: 850px; color: white; background-color: var(--ink); background-image: linear-gradient(rgba(184,245,210,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(184,245,210,.045) 1px, transparent 1px), radial-gradient(circle at 80% 28%, rgba(52,125,98,.55), transparent 30%), radial-gradient(circle at 14% 80%, rgba(255,107,74,.1), transparent 27%); background-size: 72px 72px, 72px 72px, auto, auto; }
 .hero:before { width: 53vw; height: 53vw; right: -19vw; top: 2%; min-width: 650px; min-height: 650px; border: 1px solid rgba(184,245,210,.13); background: transparent; box-shadow: 0 0 0 85px rgba(184,245,210,.018), 0 0 0 170px rgba(184,245,210,.012); }
@@ -621,6 +630,7 @@ footer { padding: 52px var(--gutter) 30px; }
 @media (max-width: 1050px) {
   :root { --gutter: clamp(24px, 6vw, 64px); --section-space: 96px; }
   .hero { grid-template-columns: 1fr; gap: 64px; padding-top: 142px; }
+  .header-actions .header-cta { display: none; }
   .hero-copy { max-width: 780px; }
   .backing-rail { grid-template-columns: auto 1fr; }
   .backing-names { justify-content: flex-start; flex-wrap: wrap; }
@@ -650,6 +660,7 @@ footer { padding: 52px var(--gutter) 30px; }
   .mobile-nav { inset: 72px 0 0; }
   .site-header.scrolled .mobile-nav { inset: 64px 0 0; }
   .header-cta { display: none; }
+  .header-biology-link { min-height: 38px; padding: 0 12px; font-size: 11px; }
   .hero { min-height: 0; gap: 52px; padding: 124px var(--gutter) 72px; }
   .hero h1 { max-width: 560px; font-size: clamp(52px, 15vw, 68px); line-height: .93; }
   .hero-lede { font-size: 16px; }
@@ -702,4 +713,8 @@ footer { padding: 52px var(--gutter) 30px; }
   .stakeholder-grid article { min-height: 310px; }
   .contact { grid-template-columns: 1fr; }
   .contact-link { font-size: 18px; }
+}
+
+@media (max-width: 520px) {
+  .site-header .header-actions { display: none; }
 }
