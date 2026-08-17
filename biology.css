@@ -482,3 +482,87 @@
   .system-node-grid button.active:before { transform: scaleX(1); }
   .system-tour-control { display: none; }
 }
+
+/* Sorcova design-kit colour roles */
+.biology-story-rail { border-color: rgba(29,42,82,.1); background: rgba(245,245,241,.82); }
+.biology-story-rail a { color: rgba(29,42,82,.5); }
+.biology-story-rail a:before { background: rgba(29,42,82,.17); }
+.biology-story-rail a.active { color: var(--brand-indigo); }
+.biology-story-rail a.active i { background: var(--brand-indigo); box-shadow: 0 0 0 5px rgba(83,104,220,.12); }
+
+.biology-hero {
+  background:
+    radial-gradient(circle at 78% 45%, rgba(83,104,220,.26), transparent 31%),
+    radial-gradient(circle at 8% 88%, rgba(99,200,177,.11), transparent 25%),
+    var(--brand-navy);
+}
+.biology-hero:before { background-image: linear-gradient(rgba(124,145,210,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(124,145,210,.045) 1px, transparent 1px); }
+.biology-hero .eyebrow, .biology-hero h1 em { color: var(--brand-teal); }
+.biology-hero .eyebrow > span { background: var(--brand-teal); }
+.biology-hero-copy > p:not(.eyebrow) { color: #c5ced1; }
+.biology-hero .button-primary { color: white; background: var(--brand-indigo); box-shadow: 0 16px 45px rgba(83,104,220,.21); }
+.biology-hero .button-primary:hover { background: #6478e5; }
+.biology-hero-graphic { border-color: rgba(124,145,210,.17); background: radial-gradient(circle at 46% 45%, rgba(83,104,220,.08), rgba(17,26,52,.12) 60%); box-shadow: 0 50px 130px rgba(9,16,35,.29), inset 0 0 90px rgba(124,145,210,.03); }
+.biology-hero-graphic:before, .biology-hero-graphic:after { border-color: rgba(124,145,210,.14); }
+.rhythm-grid path { stroke: rgba(124,145,210,.09); }
+.rhythm-one { stroke: var(--brand-teal); }
+.rhythm-two { stroke: var(--brand-coral); }
+.rhythm-three { stroke: var(--brand-yellow); }
+.rhythm-marker { fill: var(--brand-teal); stroke: var(--brand-navy); }
+.signal-mint { fill: var(--brand-teal); color: var(--brand-teal); }
+.signal-coral { fill: var(--brand-coral); color: var(--brand-coral); }
+.signal-amber { fill: var(--brand-yellow); color: var(--brand-yellow); }
+.hero-time-readout, .graphic-label { color: #d8e0e1; background: rgba(17,26,52,.76); }
+.hero-time-readout small { color: var(--brand-teal); }
+.graphic-label-one i { background: var(--brand-teal); }
+.graphic-label-two i { background: var(--brand-coral); }
+.graphic-label-three i { background: var(--brand-yellow); }
+.biology-hero-graphic > p { color: #aebbc0; }
+.biology-hero-graphic > p i { background: rgba(124,145,210,.19); }
+
+.disturbed-profile { background: #fafbf8; }
+.profile-grid-lines path, .lab-grid path { stroke: rgba(29,42,82,.1); }
+.reference-band { fill: rgba(99,200,177,.22); }
+.area-reference { background: rgba(99,200,177,.42); }
+.profile-axis-labels text, .lab-axis-labels text { fill: #62727a; }
+.disturbed-profile figcaption { color: #6d7d82; }
+.rhythm-lab, .rhythm-annotation { background: #eaf0ef; }
+.rhythm-clock { background: rgba(234,240,239,.87); }
+.lab-time-scan i { border-color: #eaf0ef; }
+.lab-reference { stroke: rgba(29,42,82,.2); }
+.lab-curve.balanced { stroke: var(--brand-teal); }
+.lab-curve.disturbed { stroke: var(--brand-coral); }
+
+.systems-story { background: var(--brand-navy); }
+.systems-story:after { border-color: rgba(124,145,210,.11); box-shadow: 0 0 0 90px rgba(83,104,220,.018), 0 0 0 180px rgba(83,104,220,.012); }
+.systems-heading h2 em { color: var(--brand-teal); }
+.systems-heading > p:last-child { color: #c0cacc; }
+.system-explorer { --system-color: var(--brand-teal); border-color: rgba(255,255,255,.18); }
+.system-node-grid button { --node-color: var(--brand-teal); }
+.system-node-grid button:nth-child(2) { --node-color: var(--pillar-sleep); }
+.system-node-grid button:nth-child(3) { --node-color: var(--brand-coral); }
+.system-node-grid button:nth-child(4) { --node-color: var(--brand-yellow); }
+.system-node-grid button:nth-child(5) { --node-color: var(--pillar-daylight); }
+.system-node-grid button:nth-child(6) { --node-color: var(--pillar-movement); }
+.system-node-grid button:hover { background: rgba(124,145,210,.05); }
+.system-node-grid button.active { background: color-mix(in srgb, var(--node-color) 13%, transparent); }
+.system-node-grid button:before, .system-node-grid button i:after { background: var(--node-color); }
+.system-node-grid button i { border-color: color-mix(in srgb, var(--node-color) 72%, white); }
+.system-node-grid button small { color: #aebabd; }
+.system-focus { border-color: rgba(255,255,255,.18); background: radial-gradient(circle at 50% 28%, color-mix(in srgb, var(--system-color) 15%, transparent), transparent 34%); }
+.system-focus-orbit { border-color: color-mix(in srgb, var(--system-color) 44%, transparent); }
+.system-focus-orbit:before, .system-focus-orbit:after { border-color: color-mix(in srgb, var(--system-color) 24%, transparent); }
+.system-focus-orbit span { color: white; background: var(--system-color); }
+.system-focus > p { color: var(--system-color); }
+.system-focus > div:last-child { color: #c2ccce; }
+.system-tour-control { color: #aebabd; }
+.system-tour-control i { background: var(--system-color); box-shadow: 0 0 0 4px color-mix(in srgb, var(--system-color) 12%, transparent); }
+.systems-disclaimer { color: #9ba9ad; }
+
+.baseline-story { background: var(--white); }
+.baseline-timeline article.is-active { background: linear-gradient(180deg, rgba(99,200,177,.09), transparent 48%); }
+.biology-cta { color: var(--ink); background: #c9e8dd; }
+.biology-cta h2 em { color: var(--orange-dark); }
+.biology-cta-actions { border-color: rgba(29,42,82,.28); }
+.biology-cta-actions a { border-color: rgba(29,42,82,.28); }
+.biology-cta-actions a span { color: var(--brand-indigo); }

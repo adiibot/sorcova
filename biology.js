@@ -86,6 +86,8 @@ let systemTourPaused = false;
 
 const activateSystem = (node) => {
   activeSystemIndex = systemNodes.indexOf(node);
+  const nodeColor = window.getComputedStyle(node).getPropertyValue('--node-color').trim();
+  if (nodeColor) systemExplorer?.style.setProperty('--system-color', nodeColor);
   systemNodes.forEach((item) => {
     const active = item === node;
     item.classList.toggle('active', active);
