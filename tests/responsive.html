@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sorcova responsive review</title>
+  <style>
+    body { margin: 24px; font: 14px system-ui, sans-serif; color: #212a57; background: #f2f5ff; }
+    header { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; margin-bottom: 24px; }
+    select { padding: 12px; border: 1px solid #c4cbea; border-radius: 12px; background: white; font: inherit; }
+    main { display: flex; align-items: start; gap: 24px; }
+    iframe { width: 390px; height: 844px; border: 1px solid #c4cbea; background: #fdfaf8; }
+    h1, h2 { font-size: 16px; font-weight: 600; }
+    section { flex: none; }
+  </style>
+</head>
+<body>
+  <header><h1>Sorcova responsive review</h1><label>Viewport width <select id="width"><option>320</option><option selected>390</option><option>768</option><option>1024</option><option>1440</option></select></label><p>Real generated pages in independent viewports. Run npm run build after editing.</p></header>
+  <main>
+    <section><h2>English</h2><iframe src="../dist/preview-en.html" title="English website at selected viewport width"></iframe></section>
+    <section><h2>Français</h2><iframe src="../dist/preview-fr.html" title="French website at selected viewport width"></iframe></section>
+  </main>
+  <script>
+    document.querySelector('#width').addEventListener('change', (event) => {
+      document.querySelectorAll('iframe').forEach((frame) => { frame.style.width = `${event.target.value}px`; });
+    });
+  </script>
+</body>
+</html>

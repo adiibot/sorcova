@@ -1,7 +1,16 @@
-# Private source material — never publish
-sorcova-website-brief.md
-
-# Local and generated files
-.DS_Store
-*.log
 node_modules/
+dist/
+.DS_Store
+test-results/
+.env
+.env.*
+!.env.example
+
+# Private source references are not part of the website.
+sorcova-website-brief.md
+additional_info.md
+DESIGN-SYSTEM.md
+sorcova-workplace-longevity.html
+*.pdf
+*.zip
+*.log
